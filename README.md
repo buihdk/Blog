@@ -4,15 +4,13 @@
 
 Submitted by: **Khoa Bui**
 
-Time spent: **10** hours spent in total
+Time spent: **15** hours spent in total
 
-URL: **Insert your Heroku URL here**
+URL: https://khoa-blog.herokuapp.com/
 
 ## User Stories
 
 The following **required** functionality is complete:
-
-> HINT: mark the items you completed with [x]
 
 * [x] User can create a new article, formatted using the Markdown language.
 * [x] User can edit an existing article.
@@ -24,7 +22,7 @@ The following **required** functionality is complete:
 The following **optional** features are implemented:
 * [x] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/. 
 * [x] User can see how many views an article has. 
-* [ ] User can leave a comment on an article.
+* [x] User can leave a comment on an article.
 * [ ] User can add "tags" to an article, and filter articles by tag. 
 
 The following **additional** features are implemented:
@@ -35,11 +33,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-> HINT: You can put a `walkthrough.gif` file in your project folder, add to git, and use the following syntax to embed it:  
-> `![Video Walkthrough](walkthrough.gif)` 
-> 
-
-![Video Walkthrough](/path/to/your/gif/file)
+![Video Walkthrough](http://i.imgur.com/dHQ9dll.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
