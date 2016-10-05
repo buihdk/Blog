@@ -1,12 +1,47 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container">
-<h1>Khoa's Blog</h1>
-<h3>My first Rails Application for CoderSchool!</h3>
-
-<%= render @articles %> 
+	<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+	  <div class="nav navbar-nav">
+	    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+	    <a class="nav-item nav-link" href="#">Portfolio</a>
+	    <a class="nav-item nav-link" href="#">Archives</a>
+	    <a class="nav-item nav-link" href="#">About</a>
+	    <a class="nav-item nav-link" href="#">Contact</a>
+	  </div>
+	</nav>
+</div>
 
 <br>
+<br>
+<br>
 
-<%= link_to 'New Article', new_article_path %>
+<div class="container">
+	<h1>Khoa's Blog</h1>
+	
+	<br>
+
+	<h3>"For every beauty there is an eye somewhere to see it. For every truth there is an ear somewhere to hear it. For every love there is a heart somewhere to receive it." - Ivan Panin.</h3>
+	
+	<br>
+
+	<div class="row">
+		<div class="col-md-4">
+			<%= link_to 'New Article', new_article_path, class: 'btn btn-primary' %>
+		</div>
+ 		<div class="col-md-8">
+ 			<%= form_tag(articles_path, :method => "get", id: "search-form") do %>
+			<%= text_field_tag :search, params[:search], placeholder: "Search Articles" %>
+			<%= submit_tag "Search", class: 'btn btn-warning' %>
+			<% end %>
+ 		</div>
+ 	</div>
+	
+	<br>
+
+	<% if @articles.present? %>
+		<%= render @articles %> 
+	<% else %>
+	  <p>There are no articles containing the term(s) <%= params[:search] %>.</p>
+	<% end %>
 </div>
