@@ -10,7 +10,11 @@
   <%= @article.body %>
 </p>
 
-<%= render 'comments/comment' %>
+<%= render @article.comments %>
+ 
+<%= render "comments/form" %>
+ 
+<br />
 
 <%= "#{@article.impressionist_count} views" %>
 <%= link_to 'Edit', edit_article_path(@article), class: 'btn btn-warning' %> |
